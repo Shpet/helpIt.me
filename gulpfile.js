@@ -10,11 +10,7 @@ const less = require('gulp-less');
 
 
 const styleFiles = [
-    './src/css/main.less',
-    './src/css/service.less',
-    './src/css/contacts.less',
-    './src/css/about_us.less',
-    './src/css/client.less'
+    './src/css/main.less'
 ]
 const jsFiles = [
     './src/js/main.js'
@@ -29,7 +25,6 @@ gulp.task('styles', () => {
     .pipe(concat('style.css'))
 
     .pipe(autoprefixer({
-        browsers: ['last 2 versions'],
         cascade: false
     }))
     .pipe(cleanCSS({

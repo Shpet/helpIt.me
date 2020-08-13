@@ -94,6 +94,10 @@ background-color: #fbfcff; }
 a {
   text-decoration: none;
   color: #000; }
+  
+section{
+    margin-top: 60px;
+  }
 
 /* mini reset */
 .nav,
@@ -131,13 +135,6 @@ img {
 ul li {
   list-style: none; }
 
-  
-.container{
-    max-width: 1980px;
-    min-width: 320px;
-    width: 100%;
-    padding: 0 5%;
-  }
 .header__top span.desc {
   font-family: 'PT Serif', serif;
   font-size: 40px;
@@ -176,9 +173,9 @@ ul li {
   font-weight: 800;
   line-height: 1.2; }
 
-.component--name {
+h2 {
   font-family: "Futura New Havy", sans-serif;
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 20px; }
@@ -720,7 +717,7 @@ div.main {
  .box__service-detail {
   padding: 40px 0;  
   }
-
+5%
 .box__service-detail img {
   margin: 0 auto; 
 box-shadow: 10px 10px 20px #d0e4ef;   } 
@@ -734,6 +731,30 @@ box-shadow: 10px 10px 20px #d0e4ef;   }
   box-shadow: 0 10px 20px #ccdfea;
   transition: all .2s; }
 
+.firstPart{
+  display: flex;
+  position: relative;
+  padding: 100px 0;
+  margin-top: 40px;
+}
+.firstPart::before{
+  content: "01";
+  border: 3px solid #7c93b2;
+  border-radius: 50%;
+  padding: 7px 20px;
+  font-size: 38px;
+  font-weight: bold;
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.firstPart>div{
+  margin: 20px;
+}
+.firstPart img{
+  width: 300px;
+}
 .section__form {
   position: relative;
   margin: 0 auto;
@@ -789,9 +810,8 @@ background-color: #e4f0fe; }
 
 .description__service--title {
   position: relative;
-  padding: 0 0 60px 0;
-  margin-bottom: 40px; }
-
+  margin-bottom: 75px; }
+/* 
 .description__service--title:after {
   content: '';
   position: absolute;
@@ -802,16 +822,16 @@ background-color: #e4f0fe; }
   left: 53%;
   top: 91%;
   background: white;
-  transform: rotate(45deg); }
+  transform: rotate(45deg); } */
 
-.description__service--title:before {
+/* .description__service--title:before {
   content: '';
   position: absolute;
   width: 100%;
   height: 1px;
   left: 0%;
   top: 98%;
-  background: #e7e7e7; }
+  background: #e7e7e7; } */
 
 .description__service--title span{
   font-family: FuturaBlackBT;
@@ -887,11 +907,21 @@ background-color: #e4f0fe; }
 .section__clients.service-page {
   background: #fbfcff;
 }
+@media (max-width: 1700px){
+  footer.section__footer{
+    padding: 100px 5%;
+  }
+  .container{
+    max-width: 1980px;
+    min-width: 320px;
+    width: 100%;
+    padding: 0 5%;
+  }
+}
 footer.section__footer {
   background: #292929;
-  margin: 0 auto;
   display: block;
-  padding: 100px 5%;
+  padding-top: 100px;
   color: #b7b7b7;
   padding-bottom: 30px; }
   footer.section__footer .section__footer-desc {
