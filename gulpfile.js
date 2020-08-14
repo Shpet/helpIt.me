@@ -64,6 +64,7 @@ gulp.task('watch', ()=>{
     });
     //следить за изменением файлов
     gulp.watch('./src/css/**/*.less', gulp.series('styles'))
+    gulp.watch('./src/css/**/*.css', gulp.series('styles'))
     gulp.watch('./src/js/**/*.js', gulp.series('scripts'))
     gulp.watch("./*.html").on('change', browserSync.reload);
 });
