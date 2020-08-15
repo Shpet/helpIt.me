@@ -90,7 +90,7 @@
 .slick-prev:before
 {
     content: ' 1';
-    background: url(../../img/slide-prev.png) no-repeat;
+    background: url(/src/img/slide-prev.png) no-repeat;
     font-size: 42px;
     color: transparent;
 }
@@ -111,7 +111,7 @@
 .slick-next:before
 {
     content: ' 1';
-    background: url(../../img/slide-right.png) no-repeat;
+    background: url(/src/img/slide-right.png) no-repeat;
     font-size: 42px;
     color: transparent;
 

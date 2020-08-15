@@ -1,0 +1,173 @@
+hr{
+  background-color: #c1c2c3;
+  width: 80%;
+  max-width: 1500px;
+  margin: 70px auto;
+  height: 1px;
+  border: none;
+}
+section.section__about h2{
+  font-size: 40px;
+  font-family: "Futura New Havy", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.section__about {
+    position: relative;
+    padding: 20px 0 120px;
+    background: #eaeaea url("/src/img/image_about.png") no-repeat 100% 50%;
+    background-size: contain;
+  margin-top: 0; }
+    .section__about-desc {
+      position: relative;
+      margin: 0 auto;
+      overflow: hidden;
+      padding-bottom: 20px; }
+      .section__about-desc .desc__detail {
+        width: 50%;
+        float: left; }
+      .section__about .desc__detail p:nth-child(2){
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+    .section__about .description {
+      line-height: 1.2;
+      font-size: 22px;
+      color: #323b49;
+    }
+  .section__about .butt_list{
+    margin-bottom: 50px;
+  }
+  .section__about .butt_list button{
+    margin-right: 10px;
+    margin-top: 20px;
+    background-color: #f1f1f2;
+    border: 2px solid #c3c3c3;
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-family: 'Futura New Medium', sans-serif;
+    font-weight: 600;
+    transition: .2s;
+    cursor: pointer;
+  }
+  .section__about .butt_list button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px #c3c3c3;
+  }
+
+  .description__service--title{
+    max-width: 1500px;
+    width: max-content;
+    margin: 70px auto;
+  }
+
+
+
+
+.desc--p {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 80%;
+  padding: 50px 40px;
+  padding-right: 0;
+  color: white; }
+  .desc--p p {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.2; }
+  .desc--p p.util-desc-mini {
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: 300; }
+    .desc--p ul{
+      margin-top: 20px;
+    }
+    .desc--p ul li{
+      white-space: nowrap ;
+      font-size: 16px;
+      width: max-content;
+      margin-bottom: 10px;
+    }
+    .desc--p ul li span{
+      border-bottom: 1px solid #fff;
+    }
+    @media (max-width: 1700px){
+      .desc--p ul li{
+       font-size: 14px;
+    }
+  }
+  .desc--p h3 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.0;
+    padding-bottom: 10px; }
+
+
+.util-desc-mini {
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 300; }
+
+.util-medium-mb {
+  margin-bottom: 100px !important; }
+
+.util-pink--hover .target-grid--detail {
+  transition: all .2s; }
+  .util-pink--hover .target-grid--detail:hover .grid-desc:after {
+    background: linear-gradient(86deg, rgba(175, 0, 82, 0.59) 35%, rgba(175, 0, 82, 0.59) 100%); }
+
+.row-box-three {
+  max-width: 156rem;
+  min-width: 110rem;
+  margin: 0 auto; }
+  .row-box-three:not(:last-child) {
+    margin-bottom: 20px; }
+  .row-box-three::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row-box-three [class^="column-"] {
+    float: left; }
+    .row-box-three [class^="column-"]:not(:last-child) {
+      margin-right: 2rem; }
+  .row-box-three .column-1-of-3 {
+    width: calc((100% - 4 * 2rem) / 3); }
+  .row-box-three .column-2-of-3 {
+    width: calc((2 * (100% - 4 * 2rem) / 3) + 1 * 2rem); }
+
+.section__target {
+  margin: 0 auto;
+ }
+  .section__target .grid-desc {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    border: coral;
+    border-radius: 12px;
+    transition: all .2s; }
+    .section__target .grid-desc:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(10, 12, 12, 0.32);
+      left: 0;
+      top: 0; }
+    .section__target .grid-desc:hover {
+      -webkit-transform: translateY(-3px);
+      -moz-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+      -o-transform: translateY(-3px);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px #ccdfea; }
+    .section__target .grid-desc img {
+      max-height: 350px;
+      min-height: 350px;
+      width: 100%; }
+
+.section__target--grid {
+  margin-bottom: 100px; }
+

@@ -10,9 +10,17 @@ const less = require('gulp-less');
 
 
 const styleFiles = [
-    './src/css/main.less'
+    "./src/js/magnific/magnific-popup.css",
+    "./src/js/slick/slick.css",
+    "./src/js/slick/slick-theme.css",
+    './src/css/main.less',
+    './src/css/service.css'
 ]
 const jsFiles = [
+    "./src/js/jquery-1.11.0.min.js",
+    "./src/js/jquery-migrate-1.2.1.min.js",
+    "./src/js/slick/slick.min.js",
+    "./src/js/magnific/jquery.magnific-popup.js",
     './src/js/main.js'
 ]
 

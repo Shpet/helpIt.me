@@ -7,18 +7,13 @@
     <meta name="description"
         content="HelpIT - Мы оказываем услуги в области информационных технологий. Основные направления деятельности компании: IT обслуживание компьютеров, сетей, кассовых систем; Настройка и обслуживание серверов семейства Microsoft Windows" />
 
-    <link href="/src/js/magnific/magnific-popup.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
-    <link rel="stylesheet" type="text/css" href="/src/js/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="/src/js/slick/slick-theme.css" />
 
     <link href="//db.onlinewebfonts.com/c/478e653b5b1afb91b0d06091ed542563?family=Futura+New+Book" rel="stylesheet"
         type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/build/css/style.css">
-    <link rel="stylesheet" href="/src/css/service.css">
     <link rel="stylesheet" href="/src/css/client.css">
     <link rel="shortcut icon" type="image/png" href="/src/img/favicon.png">
 
@@ -839,57 +834,5 @@
 
     </footer>
 </body>
-<script type="text/javascript" src="/src/js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="/src/js/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="/src/js/slick/slick.min.js"></script>
-<script type="text/javascript" src="/src/js/magnific/jquery.magnific-popup.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.slider__box-content').slick({
-            dotsClass: 'slick-dots',
-            dots: true,
-            arrows: false
-        });
-    });
-
-    $(document).ready(function () {
-
-        $('.section__service-slider').slick({
-            speed: 300,
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            swipe: false,
-            variableWidth: false,
-            arrows: true
-        });
-
-    });
-    $(document).on('click', '.collapse-block .collapse-block--title', function () {
-        $(this).next('.items-collapse').toggleClass('open');
-        $(this).toggleClass('open');
-    });
-    $(document).on('click', '.ready__case--general .btn-add-content', function (e) {
-        e.preventDefault();
-        $(".ready__case--general .hide--block").toggle();
-        $(this).hide();
-    });
-
-    $(document).on('click', '.btn-add-content', function (e) {
-        e.preventDefault();
-        $(".listen-block .hide--block").toggle();
-        $(this).hide();
-    });
-
-    $('.grid-modal--col').magnificPopup({
-        delegate: 'a', // child items selector, by clicking on it popup will open
-        type: 'image'
-        // other options
-    });
-    $('.row-graph--item').magnificPopup({
-        delegate: 'a', // child items selector, by clicking on it popup will open
-        type: 'image'
-        // other options
-    });
-</script>
 
 </html>
