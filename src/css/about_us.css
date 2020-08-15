@@ -171,3 +171,72 @@ section.section__about h2{
 .section__target--grid {
   margin-bottom: 100px; }
 
+  section.differences{
+    max-width: 1560px;
+    margin: 0 auto 150px;
+    text-align: center;
+    font-family: "Futura New Book", sans-serif;
+    font-size: 22px;
+  color: #323b49;
+
+  }
+  section.differences h2{
+    font-family: "Futura New Book", sans-serif;
+    font-size: 34px;
+    color: #000;
+  }
+section.differences .diff_row{
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+.differences img{
+  width: 150px;
+  height: auto;
+}
+.diff_row .diff_item{
+  margin-right: 100px;
+}
+.diff_item p {
+  max-width: 410px;
+  margin: 0 auto;
+}
+.differences div:nth-child(3) .diff_item{
+  width: 400px;
+}
+.differences div:nth-child(4) .diff_item{
+  width: 500px;
+}
+
+
+.whatWeDo .box__service-detail{
+  border-radius: 50%;
+}
+.whatWeDo .box__service-detail img{
+  border-radius: 50%;
+}
+
+.comparison{
+  display: flex;
+  max-width: 1560px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.comparison h2{
+  font-family: "Futura New Book", sans-serif;
+  font-size: 34px;
+  line-height: 1;
+  margin-bottom: 70px;
+}
+.comparison div{
+  width: 45%;
+}
+.comparison ul li{
+  display: flex;
+  margin-top: 30px;
+  font-size: 22px;
+  line-height: 28px;
+}
+.comparison ul li b{
+  margin-right: 20px;
+}
