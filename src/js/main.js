@@ -2,12 +2,27 @@ $(document).ready(function () {
 
     $('.section__service-slider').slick({
         speed: 300,
-        slidesToShow: 5,
+        slidesToShow: 6,
         slidesToScroll: 1,
         swipe: false,
         variableWidth: false,
-        arrows: true
+        arrows: true,
+        responsive:[
+            {
+            breakpoints: 1680,
+            settings:{
+                slidesToShow: 5,
+            }
+        }
+    ]
     });
+
+    $('.news_slider').slick({
+        centerMode: true,
+        centerPadding: '280px',
+        slidesToShow: 3,
+        arrows: false
+        });
 
     $('.slider__box-content').slick({
         dotsClass: 'slick-dots',

@@ -1,7 +1,7 @@
 hr{
   background-color: #c1c2c3;
-  width: 80%;
-  max-width: 1500px;
+  width: 90%;
+  max-width: 1560px;
   margin: 70px auto;
   height: 1px;
   border: none;
@@ -38,7 +38,7 @@ section.section__about h2{
   .section__about .butt_list{
     margin-bottom: 50px;
   }
-  .section__about .butt_list button{
+  button.btn_aboutUs{
     margin-right: 10px;
     margin-top: 20px;
     background-color: #f1f1f2;
@@ -51,7 +51,7 @@ section.section__about h2{
     transition: .2s;
     cursor: pointer;
   }
-  .section__about .butt_list button:hover{
+  button.btn_aboutUs:hover{
     transform: translateY(-3px);
     box-shadow: 0 5px 10px #c3c3c3;
   }
@@ -240,3 +240,60 @@ section.differences .diff_row{
 .comparison ul li b{
   margin-right: 20px;
 }
+.comparison~hr{
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.section_news{
+  margin-bottom: 120px;
+}
+.section_news h3{
+  font-family: "Futura Havy", sans-serif;
+  font-size: 18px;
+}
+.section_news .section_news-desc{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1560px;
+  margin: 0 auto 50px;
+}
+.section_news .section_news-desc button.btn_aboutUs{
+  background-color: #fbfcff;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-color: black;
+  font-weight: 900;
+}
+.news_slider .news_slider_item{
+  background-repeat: no-repeat;
+  margin-right: 50px;
+  max-width: 407px;
+  height: 232px;
+  color: white;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: visible;
+  transition: .2s;
+  border-radius: 5px;
+  }
+  .news_slider .news_slider_item_1{
+    background-image: url('/src/img/news_2.png');
+  }
+  .news_slider .news_slider_item_2{
+    background-image: url('/src/img/news_3.png');
+  }
+  .news_slider .news_slider_item_3{
+    background-image: url('/src/img/news_1.png');
+  }
+  .news_slider .news_slider_item div:last-child{
+    font-size: 12px;
+  }
+  .news_slider .news_slider_item div:last-child span{
+    margin-right: 20px;
+  }
+  .news_slider_item.news_slider_item[aria-hidden="true"]{
+    opacity: 0.5;
+  }
