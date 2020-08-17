@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version
+*/
+
 b{
     font-family: "Futura New Demi", sans-serif;
     
@@ -21,8 +28,12 @@ section{
     padding-right: 10px;
 }
 .contact_content{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 70px;
 }
 .contact_content>div{
@@ -60,15 +71,21 @@ section{
 }
 
 .banner{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #fff;
     height: 270px;
     max-width: 1500px;
     border-radius: 10px;
     margin: 70px auto;
-    box-shadow: 0px 5px 10px #bfcbd8;
+    -webkit-box-shadow: 0px 5px 10px #bfcbd8;
+            box-shadow: 0px 5px 10px #bfcbd8;
 }
 .banner>div>img:first-child{
 margin: 0 30px;
@@ -78,11 +95,15 @@ margin: 0 30px;
     margin: 0 auto;
 }
 .social a img:hover{
-    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+    -webkit-transition: .5s;
     transition: .5s;
 }
 
 .form_wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 70px;
 }
@@ -94,7 +115,8 @@ margin: 0 30px;
     background-color: #fff;
     border: none;
     padding: 30px;
-    box-shadow: 0px 5px 10px #dce2eb;
+    -webkit-box-shadow: 0px 5px 10px #dce2eb;
+            box-shadow: 0px 5px 10px #dce2eb;
     margin-bottom: 10px;
     max-width: 900px;
     font-family: "Futura New Book", sans-serif;
@@ -134,10 +156,8 @@ div.desk_form p{
 }
 .desk_form input:hover{
     -webkit-transform: translateY(-3px);
-    -moz-transform: translateY(-3px);
-    -ms-transform: translateY(-3px);
-    -o-transform: translateY(-3px);
     transform: translateY(-3px);
+    -webkit-transition: all .2s;
     transition: all .2s;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
-}
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
